@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Suramya Pokharel</title>
+        <link rel="icon" href="images/SPlogo123.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/6544bc0bd1.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <div id="sub-header">
+            <div class="container">
+                <nav>
+                    <img src="images/SPlogo.jpg" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#portfolio">Portfolio</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text1">
+                    <!-- <p> Software Developer | AI researcher |<br> Data Analyst</p> -->
+                    <!-- <div class="SIc"><i class="fa-solid fa-code"></i></div> -->
+                    
+                    <!-- <h1> <span>Software Development Services</span></h1> -->
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div id ="soft-dev-about">
+                <div class="container">
+                    <!-- <div class="help">
+                        <p>Unlock the full potential of your digital vision with my comprehensive software development services. 
+                            I specialize in crafting tailored solutions that seamlessly align with your business goals. From conceptualization to deployment, 
+                            I offer a diverse range of services to bring your software ideas to life.</p>
+                    </div> -->
+                    <div class = "row">
+                        <h1 class ="sub-title help">Software Development Services</h1>
+                        <div class = "softdevabout-col-1">
+                            
+                            <img src = "images/SoftDevim.png.webp">
+                        </div>
+                        <div class = "softdevabout-col-2">
+                            
+                            <p>Unlock the full potential of your digital vision with my comprehensive software development services. 
+                                I specialize in crafting tailored solutions that seamlessly align with your business goals. From conceptualization to deployment, 
+                                I offer a diverse range of services to bring your software ideas to life.</p>
+                            
+                        </div>
+                    <h1 class="Servh">Services Include: </h1>    
+                    </div>
+                    <div class="shhi">
+                        <p>
+                            <span>1. Custom Software Development:</span> <br><br>
+                            Crafting bespoke software solutions tailored to your unique business requirements, leveraging proficiency in programming languages such as Python, Java, R, and C++. Embracing software development best practices, including version control with Git and adherence to Agile methodologies, ensures a streamlined development process.<br>
+                            <br><span>2. Web Application Development:</span> <br><br>    
+                            Building dynamic and responsive web applications for a seamless online experience. Expertise in frontend technologies coupled with backend proficiency in Python, Java, and R facilitates the creation of engaging and efficient web applications. Utilizing frameworks like Flask or Django in Python, and Spring in Java, guarantees robust and scalable solutions.<br>
+                            <br><span>3. AI and Machine Learning:</span> <br><br>
+                            Harnessing the power of Artificial Intelligence (AI) and Machine Learning (ML) with frameworks like TensorFlow, PyTorch, and scikit-learn. Specializing in machine learning algorithms, neural network design, and applying ML to real-world scenarios, your software solutions become intelligent and data-driven.<br>
+                            <br><span>4. Deep Learning:</span> <br><br>
+                            Exploring the depths of Deep Learning with expertise in neural network design, including Convolutional Neural Networks (CNNs) and Recurrent Neural Networks (RNNs). Applying deep learning principles for intricate tasks like image recognition and pattern detection, supported by frameworks like TensorFlow and PyTorch.<br>
+                            <br><span>5. Computer Vision</span> <br><br>
+                            Utilizing Computer Vision techniques with OpenCV for tasks such as object detection, recognition, and image processing. Incorporating these capabilities enhances your software's ability to analyze visual data.<br>
+                            <br><span>6. Database Management</span> <br><br>
+                            Expertise in managing databases with both SQL and MongoDB. Ensuring effective data storage, retrieval, and management for your software applications.<br>
+                            <br><span>7. System Integration</span> <br><br>
+                            Seamlessly integrating your software with existing systems for enhanced functionality and efficiency. Utilizing your skills in version control (Git) and employing Agile methodologies ensures smooth collaboration and integration within complex systems.<br>
+                            <br><span>8. Software Maintenance and Support</span> <br><br>
+                            Providing ongoing maintenance, updates, and support for the longevity and reliability of your software. Utilizing version control tools like Git ensures traceability and ease of maintenance.<br>
+                            
+
+
+
+
+                        </p>
+                    </div>
+
+                    
+
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <!-- About -->
+        
+        <!-- ----------Portfolio---------- -->
+        
+        <!-- ----------Contact------- -->
+        <div id="contact">
+            
+            <div class="copyright">
+                <p>Copyright © Suramya Pokharel </p>
+                  
+            </div>
+
+
+        </div>
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link")
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab")
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+
+            }
+            
+
+
+        </script>
+        <script>
+            var sidemenu=document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+
+
+        </script>
+        
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbx7GI5E6wDjbNOuIIbXkBYFDwWLQRtWrmUr6v5YjlCwY_29sl2aru8OHTenF6H3R3i5ng/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully."
+                    setTimeout(function(){
+                        msg.innerHTML= ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+       
+    </body>
+</html>

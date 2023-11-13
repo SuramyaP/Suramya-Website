@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Suramya Pokharel</title>
+        <link rel="icon" href="images/SPlogo123.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/6544bc0bd1.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <div id="subpar-header">
+            <div class="container">
+                <nav>
+                    <img src="images/SPlogo.jpg" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#portfolio">Portfolio</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text1">
+                    <!-- <p> Software Developer | AI researcher |<br> Data Analyst</p> -->
+                    <!-- <div class="SIc"><i class="fa-solid fa-code"></i></div> -->
+                    
+                    <!-- <h1> <span>PuzzleFlow</span></h1> -->
+                </div>
+            </div>
+        </div>
+        <mainppy>
+            <h1>PuzzleFlow</h1>
+        
+            <img src="images/W111.png" alt="PuzzleFlow Image">
+        
+            <h2>Abstract:</h2>
+            <p>Jigsaw puzzles have been a popular recreational activity, challenging individuals to
+                assemble various interlocking pieces to form a coherent image. With advancement in
+                machine learning and computer vision, there has been growing interest in automating
+                the puzzle solving process. This project “PuzzleFlow: Solving Jigsaw puzzles using
+                flow based generative models” also presents a novel framework that utilizes flow-based
+                generative model for solving spatial jigsaw puzzles. The proposed system will take a
+                random arrangement of puzzle pieces as an input and reconstruct the original image by
+                intelligently arranging the scattered puzzle pieces after comparison of compatibility
+                between the puzzle patches. The proposed method involves two key stages. Firstly, a
+                Flow-based model is trained to extract the knowledge from the underlying distribution
+                of the puzzle’s image dataset. Then the model is responsible for generating realistic
+                image samples from random noise vectors. Secondly, a puzzle assembly module that
+                employs the trained model is introduced to predict the optimal placement of each puzzle
+                pieces, ensuring a coherent and visually consistent final arrangement. Overall, the
+                system will work by transforming the input arrangements density function into
+                Gaussian density function, resembling the arrangement patches and then inverting the
+                previous transformation. This project shall focus mainly on jigsaw puzzle pieces with
+                identical squares.
+            </p>
+            <h2>Code Link: <a href="https://github.com/SuramyaP"><i class="fa-brands fa-github"></i></a></h2>
+            <h3><a href="images/Suramya Resume.pdf" download class="btn btn2">Download Report</a></h3>
+
+
+            <div class="copyright">
+                <p>Copyright © Suramya Pokharel </p>      
+            </div>
+
+
+        </mainppy>
+
+        
+        
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link")
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab")
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+
+            }
+            
+
+
+        </script>
+        <script>
+            var sidemenu=document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+
+
+        </script>
+        
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbx7GI5E6wDjbNOuIIbXkBYFDwWLQRtWrmUr6v5YjlCwY_29sl2aru8OHTenF6H3R3i5ng/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully."
+                    setTimeout(function(){
+                        msg.innerHTML= ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+       
+    </body>
+</html>

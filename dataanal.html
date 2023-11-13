@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Suramya Pokharel</title>
+        <link rel="icon" href="images/SPlogo123.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/6544bc0bd1.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <div id="sub-header">
+            <div class="container">
+                <nav>
+                    <img src="images/SPlogo.jpg" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#portfolio">Portfolio</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text1">
+                    <!-- <p> Software Developer | AI researcher |<br> Data Analyst</p> -->
+                    <!-- <div class="SIc"><i class="fa-solid fa-code"></i></div> -->
+                    
+                    <!-- <h1> <span>Software Development Services</span></h1> -->
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div id ="soft-dev-about">
+                <div class="container">
+                    <!-- <div class="help">
+                        <p>Unlock the full potential of your digital vision with my comprehensive software development services. 
+                            I specialize in crafting tailored solutions that seamlessly align with your business goals. From conceptualization to deployment, 
+                            I offer a diverse range of services to bring your software ideas to life.</p>
+                    </div> -->
+                    <div class = "row">
+                        <h1 class ="sub-title help">Data Analysis Services&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h1>
+                        
+                        <div class = "softdevabout-col-1">
+                            
+                            <img src = "images/Datanapk.jpg">
+                        </div>
+                        <div class = "softdevabout-col-2">
+                            
+                            <p>Unlock the power of data with my personalized data analysis services. Specializing in extracting valuable insights from your datasets, I provide you with the tools necessary for informed and strategic decision-making tailored to your unique business context. As an individual offering data analysis, my focus is on empowering you with actionable intelligence, guiding you through a personalized data-driven journey for lasting impact.
+
+                            </p>
+                            
+                        </div>
+                    <h1 class="Servh">Services Include: </h1>    
+                    </div>
+                    <div class="shhi">
+                        <p>
+                            <span>1. Data Exploration and Cleaning:</span> <br><br>
+                            Explore the power of data with my comprehensive data analysis services. I specialize in uncovering valuable insights from your datasets, providing you with the tools to make informed and strategic decisions for your business.<br>
+                            <br><span>2. Statistical Analysis:</span> <br><br>    
+                            Unlock the stories hidden within your data through our expertise in statistical analysis. From descriptive statistics to advanced statistical modeling, I provide a thorough examination to reveal patterns and trends.<br>
+                            <br><span>3. Data Visualization:</span> <br><br>
+                            Bring your data to life with my data visualization services. I create compelling visual representations using tools like Matplotlib and other industry-standard platforms, making complex information easily understandable.<br>
+                            <br><span>4. Machine Learning in Data Analysis:</span> <br><br>
+                            Harness the power of machine learning algorithms for predictive analysis and pattern recognition. I utilize frameworks such as scikit-learn to implement intelligent solutions tailored to your data.<br>
+                            <br><span>5. Text and Sentiment Analysis:</span> <br><br>
+                            Uncover the sentiment behind your textual data with my Natural Language Processing (NLP) techniques. Whether it's customer feedback or social media content, I decode the language to provide valuable insights.<br>
+                            <br><span>6. Database Management and Optimization:</span> <br><br>
+                            Efficiently manage and optimize your databases for seamless data retrieval and storage. My expertise extends to both SQL and NoSQL databases, ensuring your data infrastructure is robust and scalable.<br>
+                            <br><span>7. Custom Data Solutions</span> <br><br>
+                            Crafting tailored data solutions to address your unique business challenges. Whether it's designing custom algorithms or developing specialized analytics tools, I align my services with your specific needs.<br>
+                            <br><span>8. Data-Driven Strategy:</span> <br><br>
+                            Transform your business strategy with data-driven insights. My consultation services guide you in leveraging data to align your business goals, providing strategic recommendations for growth and efficiency.<br>
+                            
+
+
+
+
+                        </p>
+                    </div>
+
+                    
+
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <!-- About -->
+        
+        <!-- ----------Portfolio---------- -->
+        
+        <!-- ----------Contact------- -->
+        <div id="contact">
+            
+            <div class="copyright">
+                <p>Copyright © Suramya Pokharel </p>
+                  
+            </div>
+
+
+        </div>
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link")
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab")
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+
+            }
+            
+
+
+        </script>
+        <script>
+            var sidemenu=document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+
+
+        </script>
+        
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbx7GI5E6wDjbNOuIIbXkBYFDwWLQRtWrmUr6v5YjlCwY_29sl2aru8OHTenF6H3R3i5ng/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully."
+                    setTimeout(function(){
+                        msg.innerHTML= ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+       
+    </body>
+</html>

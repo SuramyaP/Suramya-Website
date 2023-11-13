@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Suramya Pokharel</title>
+        <link rel="icon" href="images/SPlogo123.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/6544bc0bd1.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <div id="sub-header">
+            <div class="container">
+                <nav>
+                    <img src="images/SPlogo.jpg" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#portfolio">Portfolio</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text1">
+                    <!-- <p> Software Developer | AI researcher |<br> Data Analyst</p> -->
+                    <!-- <div class="SIc"><i class="fa-solid fa-code"></i></div> -->
+                    
+                    <!-- <h1> <span>Software Development Services</span></h1> -->
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div>
+            <div id ="soft-dev-about">
+                <div class="container">
+                    <!-- <div class="help">
+                        <p>Unlock the full potential of your digital vision with my comprehensive software development services. 
+                            I specialize in crafting tailored solutions that seamlessly align with your business goals. From conceptualization to deployment, 
+                            I offer a diverse range of services to bring your software ideas to life.</p>
+                    </div> -->
+                    <div class = "row">
+                        <h1 class ="sub-title help">AI Research Services&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h1>
+                        
+                        <div class = "softdevabout-col-1">
+                            
+                            <img src = "images/aireph.jpeg">
+                        </div>
+                        <div class = "softdevabout-col-2">
+                            
+                            <p>Delve into the realm of groundbreaking AI research with our specialized services. We are dedicated to pushing the boundaries of artificial intelligence, providing you with transformative solutions that redefine possibilities for your business.
+
+                            </p>
+                            
+                        </div>
+                    <h1 class="Servh">Services Include: </h1>    
+                    </div>
+                    <div class="shhi">
+                        <p>
+                            <span>1. Cutting-edge AI Concepts:</span> <br><br>
+                            Immerse yourself in cutting-edge AI innovation, where my mastery of Python, Java, R, and C++ intertwines with machine learning, natural language processing, deep learning, and computer vision. Elevate your business with bespoke solutions, finely tuned to keep you at the forefront of AI evolution.<br>
+                            <br><span>2. Research and Development:</span> <br><br>    
+                            Navigate uncharted territories through my robust research and development services. With proficiency in TensorFlow, PyTorch, scikit-learn, and a deep understanding of neural network design, I unravel new insights and methodologies to position your business at the vanguard of AI progression.<br>
+                            <br><span>3. Crafting Smart Algorithms:</span> <br><br>
+                            Unleash the potential of intelligent algorithms with my specialized design and optimization services. Leveraging your skills in Numpy, Pandas, and Matplotlib, I ensure algorithms are tailored to your unique requirements, ensuring peak performance and efficiency.<br>
+                            <br><span>4. Visual Insights with Computer Vision:</span> <br><br>
+                            Open a new chapter in visual intelligence for your AI applications. Applying your skills in OpenCV, I transform data into profound insights, from image recognition to video analysis, bringing a heightened understanding to your business operations.<br>
+                            <br><span>5. Understanding Text with NLP:</span> <br><br>
+                            Decode the language of data with my profound expertise in Natural Language Processing (NLP). Your skills in Python and frameworks like spaCy and NLTK allow me to delve into sentiment analysis, language translation, and unveil the hidden facets of textual data.<br>
+                            <br><span>6. Custom AI for Your Needs:</span> <br><br>
+                            Efficiently manage and optimize your databases for seamless data retrieval and storage. My expertise extends to both SQL and NoSQL databases, ensuring your data infrastructure is robust and scalable.<br>
+                            <br><span>7. Strategic AI Insights Guiding Business Growth:</span> <br><br>
+                            Transform your business strategy with strategic insights driven by AI. My skills in Jupyter Notebooks and Docker, combined with my consultation services, guide you in leveraging AI to align with your business goals, providing recommendations that foster growth, enhance efficiency, and drive innovation.<br>
+                            
+                            
+
+
+
+
+                        </p>
+                    </div>
+
+                    
+
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <!-- About -->
+        
+        <!-- ----------Portfolio---------- -->
+        
+        <!-- ----------Contact------- -->
+        <div id="contact">
+            
+            <div class="copyright">
+                <p>Copyright © Suramya Pokharel </p>
+                  
+            </div>
+
+
+        </div>
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link")
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab")
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+
+            }
+            
+
+
+        </script>
+        <script>
+            var sidemenu=document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+
+
+        </script>
+        
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbx7GI5E6wDjbNOuIIbXkBYFDwWLQRtWrmUr6v5YjlCwY_29sl2aru8OHTenF6H3R3i5ng/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully."
+                    setTimeout(function(){
+                        msg.innerHTML= ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+       
+    </body>
+</html>

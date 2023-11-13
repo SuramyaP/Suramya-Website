@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Suramya Pokharel</title>
+        <link rel="icon" href="images/SPlogo123.ico" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/6544bc0bd1.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <div id="subpar-header">
+            <div class="container">
+                <nav>
+                    <img src="images/SPlogo.jpg" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#portfolio">Portfolio</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text1">
+                    <!-- <p> Software Developer | AI researcher |<br> Data Analyst</p> -->
+                    <!-- <div class="SIc"><i class="fa-solid fa-code"></i></div> -->
+                    
+                    <!-- <h1> <span>PuzzleFlow</span></h1> -->
+                </div>
+            </div>
+        </div>
+        <mainppy>
+            <h1>Hospital Management System</h1>
+        
+            <img src="images/W222.png" alt="PuzzleFlow Image">
+        
+            <h2>Abstract:</h2>
+            <p> Hospital Management System focuses on the management of data inside a hospital. Using SQL as the primary backbone of the project, there was a special focus on storing data of doctors, patients and assigning patients to respective doctors based on time shift and then informing patients with their 
+                appointment turn. HTML, CSS and Django were used in conjunction to create a responsive website that had three potential end users in Patients, Doctors and Admin. Python being the primary programming language used, the end product was an easy to use effective website with a swift functioning backend.
+            </p>
+            <h2>Code Link: <a href="https://github.com/SuramyaP/Hospital-Management-System"><i class="fa-brands fa-github"></i></a></h2>
+            <!-- <h3><a href="images/Suramya Resume.pdf" download class="btn btn2">Download Report</a></h3> -->
+
+
+            <div class="copyright">
+                <p>Copyright © Suramya Pokharel </p>      
+            </div>
+
+
+        </mainppy>
+
+        
+        
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link")
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab")
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+
+            }
+            
+
+
+        </script>
+        <script>
+            var sidemenu=document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+
+
+        </script>
+        
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbx7GI5E6wDjbNOuIIbXkBYFDwWLQRtWrmUr6v5YjlCwY_29sl2aru8OHTenF6H3R3i5ng/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully."
+                    setTimeout(function(){
+                        msg.innerHTML= ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+       
+    </body>
+</html>
