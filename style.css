@@ -333,14 +333,14 @@ nav ul li a:hover::after{
 }
 
 .player {
-    background-color: #282424; /* Set the background color to white for the text layer */
+    background-color: #282424; 
     padding: 15px;
-    /* transition: background-color 0.5s; */
+    
     cursor: pointer;
 }
 
 .player h3 {
-    margin-top: 0; /* Remove default margin from heading */
+    margin-top: 0; 
     color: #fff;
     transition: color 0.5s;
     cursor: pointer;
@@ -349,7 +349,7 @@ nav ul li a:hover::after{
 }
 
 .player p {
-    margin-bottom: 10px; /* Add some space below the paragraph */
+    margin-bottom: 10px; 
     color: #fff;
     transition: color 0.5s;
     font-size: 12px;
@@ -370,7 +370,7 @@ nav ul li a:hover::after{
 }
 
 .write:hover img {
-    transform: scale(1.05); /* Add a smooth zoom effect on image hover */
+    transform: scale(1.05); 
     filter: brightness(80%); 
 }
 .ed{
@@ -379,19 +379,7 @@ nav ul li a:hover::after{
 }
 
 
-/* .write-box{
-    width: 350px;
-    background-color: #080808;
-    border: 1px solid; 
-    margin: 20px;
-}
-.write-img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
 
-} */
 
 
 
