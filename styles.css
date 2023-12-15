@@ -1,0 +1,89 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.story-container {
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.story-container img {
+    max-width: 50%; 
+    height: auto;    
+    display: block;   
+    margin: 0 auto;
+}
+.story-container h1 {
+    text-align: center;
+}
+
+.story-container p1 {
+    text-align: center;
+}
+.center-text {
+    text-align: center;
+}
+
+.story-container .content {
+    padding: 20px;
+}
+
+.story-container .date {
+    color: #888;
+    font-size: 14px;
+}
+.story-container .datea {
+    color: #888;
+    font-size: 14px;
+    text-align: center;
+}
+
+.story-container p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.story-image-container {
+    max-width: 50%; /* Adjust as needed */
+    margin: 0 auto;
+}
+
+.story-image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+/* Add these styles to your existing stylesheet or create a new one */
+
+.blog-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: auto; /* This pushes the navigation to the bottom */
+}
+
+.prev-blog,
+.next-blog {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 5px;
+}
+
+.prev-blog:hover,
+.next-blog:hover {
+    background-color: #555;
+}
